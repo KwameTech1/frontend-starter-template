@@ -6,11 +6,11 @@ This document describes all environment variables used in the project, their pur
 
 ## File Convention
 
-| File              | Purpose                                       | Committed to git? |
-|-------------------|-----------------------------------------------|-------------------|
-| `.env.example`    | Reference file — shows all expected variables | Yes               |
-| `.env.local`      | Local developer overrides                     | **No**            |
-| `.env`            | Shared defaults (use only if non-sensitive)   | **No**            |
+| File           | Purpose                                       | Committed to git? |
+| -------------- | --------------------------------------------- | ----------------- |
+| `.env.example` | Reference file — shows all expected variables | Yes               |
+| `.env.local`   | Local developer overrides                     | **No**            |
+| `.env`         | Shared defaults (use only if non-sensitive)   | **No**            |
 
 Never commit real secret values to the repository.
 
@@ -66,11 +66,11 @@ Server-only variables (no prefix) are only accessible in API routes, middleware,
 1. Open **Vercel Dashboard → Your Project → Settings → Environment Variables**.
 2. Add each variable with the correct value per scope:
 
-| Scope       | When used                                      |
-|-------------|------------------------------------------------|
-| Production  | Deployments from the `main` branch             |
-| Preview     | All other branches and pull requests           |
-| Development | When using `vercel dev` locally (optional)     |
+| Scope       | When used                                  |
+| ----------- | ------------------------------------------ |
+| Production  | Deployments from the `main` branch         |
+| Preview     | All other branches and pull requests       |
+| Development | When using `vercel dev` locally (optional) |
 
 3. After adding or changing variables, **redeploy** the affected environment for changes to take effect.
 

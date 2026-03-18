@@ -96,13 +96,13 @@ npm run build
 
 ## Scripts
 
-| Script          | Description                              |
-|-----------------|------------------------------------------|
-| `npm run dev`   | Start the local development server       |
-| `npm run build` | Build the app for production             |
-| `npm test`      | Run all tests                            |
-| `npm run lint`  | Lint the source code                     |
-| `npm run format`| Auto-format code with Prettier           |
+| Script           | Description                        |
+| ---------------- | ---------------------------------- |
+| `npm run dev`    | Start the local development server |
+| `npm run build`  | Build the app for production       |
+| `npm test`       | Run all tests                      |
+| `npm run lint`   | Lint the source code               |
+| `npm run format` | Auto-format code with Prettier     |
 
 ---
 
@@ -112,10 +112,10 @@ Copy `.env.example` to `.env.local` for local development. Never commit `.env.lo
 
 See [`docs/environment-variables.md`](./docs/environment-variables.md) for full documentation.
 
-| Variable              | Required | Description                          |
-|-----------------------|----------|--------------------------------------|
-| `NODE_ENV`            | Yes      | `development` or `production`        |
-| `VITE_API_BASE_URL`   | Yes      | Base URL of the backend API          |
+| Variable            | Required | Description                   |
+| ------------------- | -------- | ----------------------------- |
+| `NODE_ENV`          | Yes      | `development` or `production` |
+| `VITE_API_BASE_URL` | Yes      | Base URL of the backend API   |
 
 > **Note:** For Vercel deployments, set these variables in the Vercel dashboard under **Project → Settings → Environment Variables**.
 
@@ -129,6 +129,7 @@ This project is deployed via **Vercel** using automatic Git integration.
 - **Preview:** Every pull request gets an isolated preview URL automatically.
 
 See [`docs/deployment.md`](./docs/deployment.md) for the full deployment guide, including:
+
 - Connecting this repo to Vercel
 - Setting environment variables for each environment
 - Post-deploy verification checklist

@@ -6,10 +6,10 @@ This project is deployed on [Vercel](https://vercel.com) using automatic Git int
 
 ## How Deployments Work
 
-| Event                          | Deployment Type | URL                                     |
-|--------------------------------|-----------------|-----------------------------------------|
-| Push / merge to `main`         | Production      | `https://[your-project].vercel.app`     |
-| Push to any other branch / PR  | Preview         | Auto-generated unique preview URL       |
+| Event                         | Deployment Type | URL                                 |
+| ----------------------------- | --------------- | ----------------------------------- |
+| Push / merge to `main`        | Production      | `https://[your-project].vercel.app` |
+| Push to any other branch / PR | Preview         | Auto-generated unique preview URL   |
 
 - Vercel detects the framework automatically (Vite, Next.js, etc.).
 - Every deployment is isolated and atomic — a failed build never replaces the live site.
@@ -31,13 +31,13 @@ This project is deployed on [Vercel](https://vercel.com) using automatic Git int
 
 Vercel will detect the framework automatically. Verify these settings:
 
-| Setting            | Value                                               |
-|--------------------|-----------------------------------------------------|
-| Framework Preset   | Auto-detected (or set manually: Vite / Next.js etc) |
-| Root Directory     | `.` (leave as default unless using a monorepo)      |
-| Build Command      | `npm run build`                                     |
-| Output Directory   | `dist` (Vite) or `.next` (Next.js) — auto-detected |
-| Install Command    | `npm install`                                       |
+| Setting          | Value                                               |
+| ---------------- | --------------------------------------------------- |
+| Framework Preset | Auto-detected (or set manually: Vite / Next.js etc) |
+| Root Directory   | `.` (leave as default unless using a monorepo)      |
+| Build Command    | `npm run build`                                     |
+| Output Directory | `dist` (Vite) or `.next` (Next.js) — auto-detected  |
+| Install Command  | `npm install`                                       |
 
 > If you have a `vercel.json` at the root, Vercel reads it automatically. Review [`../vercel.json`](../vercel.json) and adjust `outputDirectory` to match your framework.
 
@@ -51,10 +51,10 @@ In the Vercel dashboard:
 
 **Required variables to set:**
 
-| Variable              | Production value              | Preview value                  |
-|-----------------------|-------------------------------|-------------------------------- |
-| `VITE_API_BASE_URL`   | `https://api.yourdomain.com`  | `https://api-staging.yourdomain.com` |
-| `NODE_ENV`            | Set automatically by Vercel   | Set automatically by Vercel    |
+| Variable            | Production value             | Preview value                        |
+| ------------------- | ---------------------------- | ------------------------------------ |
+| `VITE_API_BASE_URL` | `https://api.yourdomain.com` | `https://api-staging.yourdomain.com` |
+| `NODE_ENV`          | Set automatically by Vercel  | Set automatically by Vercel          |
 
 > For Next.js projects, replace `VITE_API_BASE_URL` with `NEXT_PUBLIC_API_BASE_URL`.
 
@@ -114,5 +114,6 @@ Rollback is instant — no rebuild required.
 - **Vercel** — deploys automatically from Git. It does **not** run your test suite (by design — CI handles that).
 
 This separation means:
+
 - A failing test in CI blocks the PR merge, preventing broken code from reaching `main`.
 - Vercel only ever deploys code that has passed CI and been reviewed.

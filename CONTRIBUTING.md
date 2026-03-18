@@ -30,14 +30,14 @@ Be respectful. Treat all contributors with professionalism and courtesy.
 
 ## Branch Naming Conventions
 
-| Prefix      | Use for                        |
-|-------------|--------------------------------|
-| `feat/`     | New features                   |
-| `fix/`      | Bug fixes                      |
-| `docs/`     | Documentation changes only     |
-| `chore/`    | Tooling, deps, config updates  |
+| Prefix      | Use for                                    |
+| ----------- | ------------------------------------------ |
+| `feat/`     | New features                               |
+| `fix/`      | Bug fixes                                  |
+| `docs/`     | Documentation changes only                 |
+| `chore/`    | Tooling, deps, config updates              |
 | `refactor/` | Code restructuring (no features, no fixes) |
-| `test/`     | Adding or fixing tests         |
+| `test/`     | Adding or fixing tests                     |
 
 ---
 
@@ -54,6 +54,7 @@ Use [Conventional Commits](https://www.conventionalcommits.org/):
 ```
 
 Examples:
+
 ```
 feat(auth): add login page
 fix(api): handle empty response from /users endpoint
@@ -85,6 +86,7 @@ chore: upgrade eslint to v9
 ## Reporting Issues
 
 Use the GitHub issue templates:
+
 - **Bug Report** — for unexpected behavior or errors.
 - **Feature Request** — for new ideas or improvements.
 

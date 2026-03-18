@@ -1,9 +1,9 @@
 ---
 name: Bug Report
 about: Report a reproducible bug or unexpected behavior
-title: "[Bug] "
+title: '[Bug] '
 labels: bug
-assignees: ""
+assignees: ''
 ---
 
 ## Description
@@ -35,13 +35,13 @@ If applicable, add screenshots or paste relevant logs here.
 
 ## Environment
 
-| Key        | Value          |
-|------------|----------------|
-| OS         | e.g. macOS 14  |
-| Browser    | e.g. Chrome 122|
-| Node.js    | e.g. v20.11.0  |
-| npm        | e.g. 10.2.4    |
-| App version / branch | e.g. main |
+| Key                  | Value           |
+| -------------------- | --------------- |
+| OS                   | e.g. macOS 14   |
+| Browser              | e.g. Chrome 122 |
+| Node.js              | e.g. v20.11.0   |
+| npm                  | e.g. 10.2.4     |
+| App version / branch | e.g. main       |
 
 ## Additional Context
 

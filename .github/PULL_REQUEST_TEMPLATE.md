@@ -21,9 +21,7 @@ Closes # (issue number, if applicable)
 
 -
 -
--
-
----
+- ***
 
 ## Testing
 
@@ -38,7 +36,7 @@ Closes # (issue number, if applicable)
 ## Screenshots (if applicable)
 
 | Before | After |
-|--------|-------|
+| ------ | ----- |
 |        |       |
 
 ---

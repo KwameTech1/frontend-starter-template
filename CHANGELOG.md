@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](https://semver.org/) and the forma
 ## [Unreleased]
 
 ### Added
+
 - Initial project scaffold from frontend-starter-template.
 
 ---

@@ -37,13 +37,13 @@ npm install
 
 Search the project for these strings and replace them with real values:
 
-| Placeholder        | Replace with                          | Where it appears                  |
-|--------------------|---------------------------------------|-----------------------------------|
-| `[PROJECT_NAME]`   | Your app's display name               | `README.md`                       |
-| `[GITHUB_USERNAME]`| Your GitHub username or org           | `README.md`                       |
-| `[REPO_NAME]`      | The new repo's name (e.g., `my-app`)  | `README.md`                       |
-| `[YOUR_NAME]`      | Your full name or org name            | `README.md`, `LICENSE`            |
-| `[YEAR]`           | Current year (e.g., `2026`)           | `LICENSE`                         |
+| Placeholder         | Replace with                         | Where it appears       |
+| ------------------- | ------------------------------------ | ---------------------- |
+| `[PROJECT_NAME]`    | Your app's display name              | `README.md`            |
+| `[GITHUB_USERNAME]` | Your GitHub username or org          | `README.md`            |
+| `[REPO_NAME]`       | The new repo's name (e.g., `my-app`) | `README.md`            |
+| `[YOUR_NAME]`       | Your full name or org name           | `README.md`, `LICENSE` |
+| `[YEAR]`            | Current year (e.g., `2026`)          | `LICENSE`              |
 
 ---
 
@@ -79,6 +79,7 @@ Then update `package.json` scripts:
 ```
 
 Also update `vercel.json`:
+
 - Remove `"outputDirectory": "dist"` — Vercel auto-detects Next.js output.
 - Set `"framework": "nextjs"` (or remove the `framework` key entirely to let Vercel detect it).
 
@@ -103,6 +104,7 @@ VITE_API_BASE_URL=http://localhost:3001
 ```
 
 **Rules:**
+
 - `.env.local` is gitignored — never commit it.
 - `.env.example` is committed — keep it up to date as you add new variables.
 - Use `VITE_` prefix for Vite projects, `NEXT_PUBLIC_` for Next.js, when a variable needs to be accessible in the browser.
@@ -134,6 +136,7 @@ Open `CHANGELOG.md` and log your initial setup entry under `[Unreleased]`:
 ## [Unreleased]
 
 ### Added
+
 - Initial project setup with Vite + React.
 ```
 
@@ -166,6 +169,7 @@ Go to the **Actions** tab on GitHub and confirm the CI workflow passes.
 5. Click **"Deploy"**.
 
 From this point:
+
 - Pushing to `main` → automatic production deployment.
 - Opening a pull request → automatic preview deployment with a unique URL.
 
@@ -177,28 +181,28 @@ See [`deployment.md`](./deployment.md) for the full Vercel guide including custo
 
 Once your framework is installed and everything works, remove these template artifacts:
 
-| File / Item                    | Action                                               |
-|--------------------------------|------------------------------------------------------|
-| `src/index.js`                 | Delete — replaced by your framework's entry point   |
-| `tests/example.test.js`        | Delete or replace with real tests                   |
-| `public/.gitkeep`              | Delete once you add a real file to `public/`        |
-| `scripts/.gitkeep`             | Delete once you add a real script to `scripts/`     |
-| `README.md` placeholder text   | Replace all `[BRACKET]` values with real content    |
-| `package.json` `"name"` field  | Update to your actual project name                  |
-| `package.json` `"description"` | Update to a real description                        |
+| File / Item                    | Action                                            |
+| ------------------------------ | ------------------------------------------------- |
+| `src/index.js`                 | Delete — replaced by your framework's entry point |
+| `tests/example.test.js`        | Delete or replace with real tests                 |
+| `public/.gitkeep`              | Delete once you add a real file to `public/`      |
+| `scripts/.gitkeep`             | Delete once you add a real script to `scripts/`   |
+| `README.md` placeholder text   | Replace all `[BRACKET]` values with real content  |
+| `package.json` `"name"` field  | Update to your actual project name                |
+| `package.json` `"description"` | Update to a real description                      |
 
 ---
 
 ## Ongoing Workflow
 
-| Task                   | Command                  |
-|------------------------|--------------------------|
-| Start dev server       | `npm run dev`            |
-| Run tests              | `npm test`               |
-| Lint code              | `npm run lint`           |
-| Format code            | `npm run format`         |
-| Check formatting       | `npm run format:check`   |
-| Build for production   | `npm run build`          |
+| Task                 | Command                |
+| -------------------- | ---------------------- |
+| Start dev server     | `npm run dev`          |
+| Run tests            | `npm test`             |
+| Lint code            | `npm run lint`         |
+| Format code          | `npm run format`       |
+| Check formatting     | `npm run format:check` |
+| Build for production | `npm run build`        |
 
 ---
 
