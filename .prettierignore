@@ -22,6 +22,9 @@ coverage/
 .claude/
 .vercel/
 
+# Project config docs
+CLAUDE.md
+
 # Lock files (Prettier can format these but it's often undesirable)
 package-lock.json
 yarn.lock
