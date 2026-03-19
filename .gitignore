@@ -69,3 +69,7 @@ coverage/
 *.pem
 *.key
 *.crt
+
+# ─── Personal / Private ──────────────────────────────────────────────────────
+DESIGNPROMPT.md
+DESIGNUNIQUENESS.md
